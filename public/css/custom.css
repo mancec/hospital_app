@@ -1,0 +1,38 @@
+
+.content-table {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+    width: 1200px;
+}
+i.fas.fa-eye.text-success.fa-lg {
+    font-size: 18px;
+}
+
+i.fas.fa-edit.fa-lg {
+    font-size: 18px;
+}
+
+i.fas.fa-trash.fa-lg.text-danger {
+    font-size: 18px;
+}
+.show {
+    align-items: center;
+}
+.removebtn {
+    color:black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:13px;
+    height: 13px;
+    text-align:center;
+    border-radius:50%;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #FFF
+}
+.hidden.sm\:flex-1.sm\:flex.sm\:items-center.sm\:justify-between {
+    padding-top: 10px;
+}
