@@ -39,9 +39,9 @@ class ProcessPrescription implements ShouldQueue
         $prescription = Prescription::findOrFail($this->prescription->id);
         if ($prescription)
         {
-            dd($prescription->update([
+            $prescription->update([
                 'status' => config('enums.prescription_status.CONFIRMED')
-            ]));
+            ]);
         }
     }
 }

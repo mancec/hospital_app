@@ -33,23 +33,23 @@
                 <div class="form-group" id="new_patient" style="display:none">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="testpatient">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{old('name')}}">
                     </div>
                     <div class="form-group">
                         <label for="surname">Surname</label>
-                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" value="testsurname">
+                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" value="{{old('surname')}}">
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="example@test.com" value="test@test.com">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@test.com" value="{{old('email')}}">
                     </div>
                     <div class="form-group">
                         <label for="personal_code">Personal code (11 numbers)</label>
-                        <input type="text" class="form-control" id="personal_code" name="personal_code" placeholder="39540948432" value="39540941241">
+                        <input type="text" class="form-control" id="personal_code" name="personal_code" placeholder="39540948432" value="{{old('personal_code')}}">
                     </div>
                     <div class="form-group">
                         <label for="date_of_birth">Date of birth</label>
-                        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" placeholder="Title" value="test">
+                        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" placeholder=1999-11-11 value="{{old('date_of_birth')}}">
                     </div>
                 </div>
             </div>
@@ -58,8 +58,8 @@
                 <input type="hidden" name="doctor_id" value="{{$doctor->id}}" id="doctor_id">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Reason for visit</label>
-                <textarea class="form-control" id="reason_for_visit" name="reason_for_visit" rows="3">Formal check</textarea>
+                <label for="exampleFormControlTextarea1">Reason for visit:</label>
+                <textarea class="form-control" id="reason_for_visit" name="reason_for_visit" rows="3">{{old('reason_for_visit')}}</textarea>
             </div>
             <div class="form-group">
                 <label for="date">From : {{$timestamps['start']}}</label>

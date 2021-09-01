@@ -75,7 +75,7 @@ class PermissionsUsersSeeder extends Seeder
         ]);
         $user->assignRole($role1);
 
-        Drug::factory()->count(25000)->create();
+        Drug::factory()->count(500)->create();
 
     }
 }

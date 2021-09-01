@@ -51,7 +51,8 @@ class PatientPrescriptionController extends Controller
         Mail::to($patient->email)
             ->queue(new PatientRegistration($prescription));
         ProcessPrescription::dispatch($prescription)
-            ->onQueue('reservations');
+            ->onQueue('reservations')
+            ->delay(now()->addMinutes(60));;
 
         return redirect('/patients/' . $patient->id . '/prescriptions');
     }
