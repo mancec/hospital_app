@@ -3,7 +3,7 @@
 Hospital application for managing patient registrations and prescriptions.
 Appointment is reserved for 10 minutes 
 
-### Set up te project:
+### Set up the project:
 - clone repository
 - run in terminal : docker run --rm \
   -u "$(id -u):$(id -g)" \
